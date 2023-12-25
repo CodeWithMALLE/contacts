@@ -20,7 +20,7 @@ function App() {
   return (
     <div>
       {user && <HeaderBlock username={user.nom} />}
-      <BrowserRouter>
+      <BrowserRouter basename='/contacts'>
         <Routes>
           <Route path="/" exact element={<Home setUser={setUser} />} />
           <Route path="/login" exact element={<Login />} />
