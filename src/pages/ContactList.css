@@ -1,0 +1,68 @@
+/* ContactList.css */
+.contact-list-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.contact-item div {
+    margin-bottom: 10px;
+}
+
+.contact-name {
+    font-weight: bold;
+}
+
+.contact-profession,
+.contact-email,
+.contact-phone {
+    color: #555;
+}
+
+.contact-phone a,
+.contact-email a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.contact-delete {
+    cursor: pointer;
+    color: #ff0000;
+}
+
+.contact-delete:hover {
+    text-decoration: underline;
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .contact-item {
+        flex-direction: column;
+        /* Afficher les éléments en colonne sur les petits écrans */
+    }
+
+    .contact-item div {
+        margin-bottom: 0;
+    }
+
+    .contact-email,
+    .contact-phone {
+        margin-top: 5px;
+    }
+}
