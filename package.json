@@ -1,6 +1,6 @@
 {
   "name": "contacts-react",
-  "home": "https://codewithmalle.github.io/contacts/",
+  "homepage": "https://codewithmalle.github.io/contacts/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
